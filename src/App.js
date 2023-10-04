@@ -9,7 +9,7 @@ function App() {
       <Avatar image={profile.image} name={profile.name} />
       <div className="data">
         <Intro name={profile.name} summary={profile.summary}/>
-        <SkillList skills={profile.skills} colors={profile.color}/>
+        <SkillList skills={profile.skills}/>
       </div>
     </article>
   );

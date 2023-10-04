@@ -1,8 +1,8 @@
 import SkillListItem from "./SkillListItem";
 
-function SkillList({ skills, colors, emojis }) {
-  const renderedSkills = skills.map((skill, index) => (
-    <SkillListItem key={skill} skill={skill} color={colors[index]}/>
+function SkillList({ skills}) {
+  const renderedSkills = skills.map((skill) => (
+    <SkillListItem key={skill.skill} skill={skill.skill} color={skill.color} level={skill.level}/>
   ));
   return <ul className="skill-list">{renderedSkills}</ul>;
 }
